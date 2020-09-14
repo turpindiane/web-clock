@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diane Turpin - Clock Solution</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
+  </head>
+  
+  <body onload="loadPage()">
+    <div id="clockWrapper">
+      <form id="utcOffsetInput">
+        Set UTC offset: 
+        <select id="utcOffsetInput-sign" name="utcOffsetInput-sign"> 
+          <option value="+">+</option>
+          <option value="-">-</option>
+        </select>
+        <select id="utcOffsetInput-hours" name="utcOffsetInput-hours">
+          <option value=""></option>
+          <option value="00">00</option>
+          <option value="01">01</option>
+          <option value="02">02</option>
+          <option value="03">03</option>
+          <option value="04">04</option>
+          <option value="05">05</option>
+          <option value="06">06</option>
+          <option value="07">07</option>
+          <option value="08">08</option>
+          <option value="09">09</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+        </select>
+        <select id="utcOffsetInput-minutes" name="utcOffsetInput-minutes">
+          <option value=""></option>
+          <option value="00">00</option>
+          <option value="30">30</option>
+        </select>
+        <input type="submit" value = "Go">
+      </form>
+      <div id="clockText">
+      </div>
+    </div>
+  </body>
+  
+</html>
